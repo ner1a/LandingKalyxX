@@ -273,31 +273,6 @@
             }
         });
 
-        // Form gönderimi
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Simüle edilmiş form gönderimi
-            const submitBtn = this.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = 'Gönderiliyor...';
-            submitBtn.disabled = true;
-
-            setTimeout(() => {
-                document.getElementById('contactForm').style.display = 'none';
-                document.getElementById('formSuccess').style.display = 'block';
-
-                // 3 saniye sonra formu sıfırla
-                setTimeout(() => {
-                    document.getElementById('contactForm').reset();
-                    document.getElementById('contactForm').style.display = 'block';
-                    document.getElementById('formSuccess').style.display = 'none';
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                }, 3000);
-            }, 1500);
-        });
-
         // FAQ aç/kapa
         document.querySelectorAll('.faq-question').forEach(button => {
             button.addEventListener('click', function() {
@@ -307,18 +282,6 @@
                 answer.classList.toggle('active');
                 icon.textContent = answer.classList.contains('active') ? '-' : '+';
             });
-        });
-
-        // Pencere yeniden boyutlandırma ile mobil menüyü kapat
-        window.addEventListener('resize', function () {
-            if (window.innerWidth > 1024) {
-                const hamburger = document.querySelector('.hamburger');
-                const mobileNav = document.querySelector('.mobile-nav');
-                const overlay = document.querySelector('.overlay');
-                hamburger.classList.remove('active');
-                mobileNav.classList.remove('active');
-                overlay.classList.remove('active');
-            }
         });
     </script>
 </body>
