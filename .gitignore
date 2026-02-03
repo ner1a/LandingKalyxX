@@ -1,0 +1,63 @@
+# Dependencies
+node_modules/
+bower_components/
+
+# Production builds
+dist/
+build/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Backup files
+*.bak
+*.backup
+
+# Package files (if using package.json)
+*.tgz
+
+# Documentation builds
+docs/_build/
+site/
+
+# Tests
+coverage/
+*.lcov
+
+# Coverage reports
+.nyc_output/
+
+# Analysis tools
+.npm/
+.eslintcache
+.stylelintrccache
+
+# Cache
+.cache/
+.parcel-cache/
+.nuxt/
+.vuepress/dist/
+
+# Uploads
+uploads/
+temp/
+tmp/
