@@ -3809,7 +3809,7 @@ caption {
     line-height: 1.7;
 }
 
-.faq-item.active .faq-answer {
+.faq-item .faq-answer.active {
     max-height: 200px;
 }
 
