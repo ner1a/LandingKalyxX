@@ -238,7 +238,6 @@ Each product page includes:
 ## Contact & Support
 
 For questions or technical support:
-- Email: info@kalyxx.com
 - Technical questions: Refer to product-specific sections
 - Content questions: Check official website content
 - Design questions: Review style.css documentation
